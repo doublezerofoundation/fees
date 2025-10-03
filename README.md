@@ -6,8 +6,8 @@ In addition, there is some historical data to help users better understand their
 
 <br>You can also run the following curl command to fetch this data:
 ```
-curl -s "https://api.trillium.so/validator_rewards/<EPOCH>" | \
-jq --arg pubkey "<IDENTITY_PUBKEY>" \
+curl -s "https://api.trillium.so/validator_rewards/{EPOCH}" | \
+jq --arg pubkey "{IDENTITY_PUBKEY}" \
 '.[] | 
 select(.identity_pubkey == $pubkey) | 
 {
@@ -25,7 +25,7 @@ select(.identity_pubkey == $pubkey) |
 }'
 ```
 
-<br>Please replace <EPOCH> and <IDENTITY_PUBKEY> with suitable values as below:
+<br>Please replace **{EPOCH}** and **{IDENTITY_PUBKEY}** with suitable values as below:
 ```
 curl -s "https://api.trillium.so/validator_rewards/855" | \
 jq --arg pubkey "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy" \
