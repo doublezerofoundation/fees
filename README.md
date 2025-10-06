@@ -1,4 +1,4 @@
-**TLDR: Fees go into effect starting Epoch 859; please pay those fees sometime during Epoch 860. See instructions at: https://docs.malbeclabs.com/paying-fees/.**
+**TLDR: Fees go into effect starting Epoch 859; please pay those fees sometime during Epoch 860. See instructions at: https://docs.malbeclabs.com/paying-fees/ and check the amount needed to pay at https://github.com/doublezerofoundation/fees/blob/main/fees_859.csv.**
 
 This repo is designed to help Solana validators understand the fees they would pay to DoubleZero, which are assessed at 5% of block rewards per epoch.
 
